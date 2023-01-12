@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
@@ -8,17 +8,20 @@
 
 /* Topography */
 html{
+    /* 62.5% of 16px = 10px */
     font-size: 16px;
 }
 
 body{
     font-family: intrt, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
-    line-height:1.5 ;
+    line-height: 1.5;
     color: var(--color-body);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
 }
@@ -81,4 +84,54 @@ a{
     .link-arrow {
         font-size: 1.5rem;
     }
+}
+
+/* Badgees */
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+
+.badge--primary {
+    background: var(--color-primary);
+    color:  white;
+}
+
+.badge--secondary {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size 1.5rem;
+    }
+}
+
+.badge--small{
+    font-size: 1.2rem;
+}
+
+/* list */
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings);
+    font-size: bold;
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick {
+    
 }
